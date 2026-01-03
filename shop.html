@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Tales of Fairies ✨</title>
+    <meta name="description" content="Browse our collection of handmade crochet and resin crafts. Keychains, bookmarks, and accessories.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🧚‍♀️</span>
+                <h1>Tales of Fairies</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="custom-order.html">Custom Orders</a></li>
+                    <li><a href="cart.html">
+                        <span class="cart-icon">
+                            🛒
+                            <span class="cart-count">0</span>
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SHOP CONTENT -->
+    <div class="container">
+        <section class="section">
+            <div class="text-center">
+                <h1>✨ Our Magical Shop ✨</h1>
+                <p>Browse our collection of handmade treasures</p>
+            </div>
+
+            <!-- CATEGORY TABS -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Products 🌟</button>
+                <button class="tab-btn" data-category="resin-keychains">Resin Keychains 🔑</button>
+                <button class="tab-btn" data-category="acrylic-keychains">Acrylic Keychains ✨</button>
+                <button class="tab-btn" data-category="crochet">Crochet Items 🧶</button>
+                <button class="tab-btn" data-category="bookmarks">Bookmarks 📚</button>
+            </div>
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here by JavaScript -->
+            </div>
+
+            <!-- EMPTY STATE (hidden by default) -->
+            <div id="emptyState" class="text-center hidden" style="padding: 4rem 2rem;">
+                <p style="font-size: 1.5rem; color: var(--text-light);">
+                    No products found in this category 🔍
+                </p>
+                <button class="btn btn-primary" onclick="displayProducts('all')" style="margin-top: 2rem;">
+                    View All Products
+                </button>
+            </div>
+        </section>
+
+        <!-- INFO BOXES -->
+        <section class="section">
+            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <!-- Premade Items -->
+                <div style="background: linear-gradient(135deg, var(--pastel-pink), var(--lavender)); padding: 2rem; border-radius: 20px; text-align: center; color: white;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+                    <h3>Premade Items</h3>
+                    <p>Ready to ship immediately</p>
+                </div>
+
+                <!-- Custom Orders -->
+                <div style="background: linear-gradient(135deg, var(--sky-blue), var(--soft-mint)); padding: 2rem; border-radius: 20px; text-align: center; color: white;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+                    <h3>Custom Orders</h3>
+                    <p>Personalized just for you</p>
+                </div>
+
+                <!-- Fast Delivery -->
+                <div style="background: linear-gradient(135deg, var(--soft-mint), var(--sky-blue)); padding: 2rem; border-radius: 20px; text-align: center; color: white;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚚</div>
+                    <h3>Nationwide Delivery</h3>
+                    <p>We deliver across Pakistan</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>✨ Tales of Fairies</h3>
+                <p>Handmade with love 💕</p>
+                <p>Delivery across Pakistan 🇵🇰</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="custom-order.html">Custom Orders</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📧 talesoffairies@example.com</p>
+                <p>📱 WhatsApp: +92 300 1234567</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">📷</a>
+                    <a href="#" onclick="openWhatsApp(); return false;" class="social-icon">💬</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Shop Info</h3>
+                <p>🎨 Custom orders available</p>
+                <p>🚚 Nationwide delivery</p>
+                <p>💳 Cash on Delivery</p>
+                <p>🏦 Bank Transfer</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tales of Fairies. All rights reserved. Made with 💕 and ✨</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="whatsapp-float" onclick="openWhatsApp()" title="Chat on WhatsApp">
+        💬
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

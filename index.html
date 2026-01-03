@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tales of Fairies ✨ - Handmade Crochet & Resin Treasures</title>
+    <meta name="description" content="Discover magical handmade crochet and resin crafts. Custom keychains, bookmarks, and accessories made with love in Pakistan.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🧚‍♀️</span>
+                <h1>Tales of Fairies</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="custom-order.html">Custom Orders</a></li>
+                    <li><a href="cart.html">
+                        <span class="cart-icon">
+                            🛒
+                            <span class="cart-count">0</span>
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>✨ Welcome to Tales of Fairies ✨</h2>
+        <p>Handmade crochet & resin treasures crafted with love</p>
+        <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary">Shop Now 🛍️</a>
+            <a href="custom-order.html" class="btn btn-secondary">Create Custom Order 🎨</a>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <div class="container">
+        <section class="section">
+            <div class="text-center">
+                <h2>✨ Featured Products ✨</h2>
+                <p>Discover our most magical creations</p>
+            </div>
+            
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-2">
+                <a href="shop.html" class="btn btn-primary">View All Products 🌟</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section">
+            <div style="background: white; padding: 3rem 2rem; border-radius: 20px; box-shadow: 0 4px 20px var(--shadow); text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2>🌸 About Our Shop 🌸</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1.5rem;">
+                    Welcome to Tales of Fairies, where every piece is crafted with love and care! 
+                    We specialize in handmade crochet accessories and beautiful resin crafts. 
+                    Each item is uniquely designed to bring a touch of magic to your everyday life.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+                    Whether you're looking for a premade treasure or a custom creation, 
+                    we're here to make your fairy tale dreams come true! ✨
+                </p>
+            </div>
+        </section>
+
+        <!-- CATEGORIES PREVIEW -->
+        <section class="section">
+            <div class="text-center mb-2">
+                <h2>🎨 Shop by Category 🎨</h2>
+                <p>Explore our magical collections</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Resin Keychains -->
+                <div class="product-card" style="cursor: pointer;" onclick="window.location.href='shop.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFD6E8, #E6D5F5); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                        🔑
+                    </div>
+                    <div class="product-info">
+                        <h3>Resin Keychains</h3>
+                        <p class="product-description">Alphabet keychains & custom designs</p>
+                    </div>
+                </div>
+
+                <!-- Acrylic Keychains -->
+                <div class="product-card" style="cursor: pointer;" onclick="window.location.href='shop.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #C9E4F7, #D4F1E8); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                        ✨
+                    </div>
+                    <div class="product-info">
+                        <h3>Acrylic Keychains</h3>
+                        <p class="product-description">Cute & colorful designs</p>
+                    </div>
+                </div>
+
+                <!-- Crochet Items -->
+                <div class="product-card" style="cursor: pointer;" onclick="window.location.href='shop.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #E6D5F5, #FFD6E8); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                        🧶
+                    </div>
+                    <div class="product-info">
+                        <h3>Crochet Items</h3>
+                        <p class="product-description">Hand warmers & accessories</p>
+                    </div>
+                </div>
+
+                <!-- Bookmarks -->
+                <div class="product-card" style="cursor: pointer;" onclick="window.location.href='shop.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #D4F1E8, #C9E4F7); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                        📚
+                    </div>
+                    <div class="product-info">
+                        <h3>Resin Bookmarks</h3>
+                        <p class="product-description">Perfect for book lovers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS SECTION -->
+        <section class="reviews-section">
+            <div class="text-center">
+                <h2>💕 Customer Reviews 💕</h2>
+                <p>See what our customers are saying!</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Absolutely love my custom keychain! The quality is amazing and it's so cute. 
+                        Perfect gift for my sister! 💕"
+                    </p>
+                    <p class="review-author">- Ayesha K.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "The crochet hand warmers are so cozy and well-made. 
+                        Fast delivery too! Highly recommend! ✨"
+                    </p>
+                    <p class="review-author">- Fatima R.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">
+                        "Beautiful resin bookmarks! Each one is unique and magical. 
+                        Will definitely order again! 🌸"
+                    </p>
+                    <p class="review-author">- Sara M.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>✨ Tales of Fairies</h3>
+                <p>Handmade with love 💕</p>
+                <p>Delivery across Pakistan 🇵🇰</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="custom-order.html">Custom Orders</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📧 talesoffairies@example.com</p>
+                <p>📱 WhatsApp: +92 300 1234567</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">📷</a>
+                    <a href="#" onclick="openWhatsApp(); return false;" class="social-icon">💬</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Shop Info</h3>
+                <p>🎨 Custom orders available</p>
+                <p>🚚 Nationwide delivery</p>
+                <p>💳 Cash on Delivery</p>
+                <p>🏦 Bank Transfer</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tales of Fairies. All rights reserved. Made with 💕 and ✨</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="whatsapp-float" onclick="openWhatsApp()" title="Chat on WhatsApp">
+        💬
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

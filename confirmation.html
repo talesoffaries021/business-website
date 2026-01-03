@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - Tales of Fairies ✨</title>
+    <meta name="description" content="Your order has been placed successfully!">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🧚‍♀️</span>
+                <h1>Tales of Fairies</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="custom-order.html">Custom Orders</a></li>
+                    <li><a href="cart.html">
+                        <span class="cart-icon">
+                            🛒
+                            <span class="cart-count">0</span>
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONFIRMATION CONTENT -->
+    <div class="container">
+        <section class="section">
+            <!-- Success Message -->
+            <div class="confirmation-box">
+                <div class="success-icon">✨🎉✨</div>
+                <h2>Thank You for Your Magical Order!</h2>
+                <p style="font-size: 1.2rem; line-height: 1.8;">
+                    Your order has been received successfully!<br>
+                    We'll contact you soon via WhatsApp to confirm details.
+                </p>
+            </div>
+
+            <!-- What's Next -->
+            <div style="max-width: 800px; margin: 3rem auto;">
+                <div style="background: white; padding: 3rem 2rem; border-radius: 20px; box-shadow: 0 4px 20px var(--shadow);">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">💫 What Happens Next? 💫</h2>
+                    
+                    <div style="display: grid; gap: 2rem;">
+                        <!-- Step 1 -->
+                        <div style="display: flex; gap: 1.5rem; align-items: start;">
+                            <div style="background: linear-gradient(135deg, var(--pastel-pink), var(--lavender)); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 1.5rem; font-weight: bold;">
+                                1
+                            </div>
+                            <div>
+                                <h3>Order Review</h3>
+                                <p style="color: var(--text-light); line-height: 1.8;">
+                                    We're reviewing your order and preparing your magical items with love and care ✨
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div style="display: flex; gap: 1.5rem; align-items: start;">
+                            <div style="background: linear-gradient(135deg, var(--sky-blue), var(--soft-mint)); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 1.5rem; font-weight: bold;">
+                                2
+                            </div>
+                            <div>
+                                <h3>WhatsApp Confirmation</h3>
+                                <p style="color: var(--text-light); line-height: 1.8;">
+                                    We'll message you on WhatsApp within 24 hours to confirm your order details and delivery charges 💬
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div style="display: flex; gap: 1.5rem; align-items: start;">
+                            <div style="background: linear-gradient(135deg, var(--lavender), var(--pastel-pink)); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 1.5rem; font-weight: bold;">
+                                3
+                            </div>
+                            <div>
+                                <h3>Crafting Your Order</h3>
+                                <p style="color: var(--text-light); line-height: 1.8;">
+                                    Your items will be handcrafted with love (ready-made items ship immediately, custom orders take 3-7 days) 🧚‍♀️
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div style="display: flex; gap: 1.5rem; align-items: start;">
+                            <div style="background: linear-gradient(135deg, var(--soft-mint), var(--sky-blue)); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-size: 1.5rem; font-weight: bold;">
+                                4
+                            </div>
+                            <div>
+                                <h3>Delivery</h3>
+                                <p style="color: var(--text-light); line-height: 1.8;">
+                                    Your magical treasures will be carefully packaged and delivered to your doorstep across Pakistan 🚚
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Card -->
+            <div style="max-width: 600px; margin: 3rem auto;">
+                <div style="background: linear-gradient(135deg, var(--pastel-pink), var(--lavender)); padding: 2.5rem 2rem; border-radius: 20px; text-align: center; color: white; box-shadow: 0 4px 20px var(--shadow);">
+                    <h3 style="color: white; margin-bottom: 1rem;">💬 Need Help?</h3>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem; color: white;">
+                        Have questions about your order?<br>
+                        Feel free to reach out to us anytime!
+                    </p>
+                    
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <button onclick="openWhatsApp()" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                            💬 Message on WhatsApp
+                        </button>
+                        
+                        <a href="https://instagram.com" target="_blank" class="btn" style="background: white; color: var(--text-dark); display: inline-flex; align-items: center; gap: 0.5rem;">
+                            📷 Follow on Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue Shopping -->
+            <div style="text-align: center; margin: 3rem 0;">
+                <h3 style="margin-bottom: 1.5rem;">✨ Continue Your Magical Journey ✨</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="shop.html" class="btn btn-primary">
+                        Browse More Products 🛍️
+                    </a>
+                    <a href="custom-order.html" class="btn btn-secondary">
+                        Create Custom Order 🎨
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div style="max-width: 900px; margin: 3rem auto;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">💕 Join Our Happy Customers 💕</h3>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">
+                            "Amazing quality and beautiful packaging! The custom keychain was exactly what I wanted. Highly recommend! 💕"
+                        </p>
+                        <p class="review-author">- Ayesha K.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">
+                            "Fast delivery and excellent customer service. The crochet items are so well-made and cozy! Will order again! ✨"
+                        </p>
+                        <p class="review-author">- Fatima R.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="review-text">
+                            "Perfect gift for my sister! She loved the resin bookmark. The team was super helpful throughout. 🌸"
+                        </p>
+                        <p class="review-author">- Sara M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>✨ Tales of Fairies</h3>
+                <p>Handmade with love 💕</p>
+                <p>Delivery across Pakistan 🇵🇰</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="custom-order.html">Custom Orders</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📧 talesoffairies@example.com</p>
+                <p>📱 WhatsApp: +92 300 1234567</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">📷</a>
+                    <a href="#" onclick="openWhatsApp(); return false;" class="social-icon">💬</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Shop Info</h3>
+                <p>🎨 Custom orders available</p>
+                <p>🚚 Nationwide delivery</p>
+                <p>💳 Cash on Delivery</p>
+                <p>🏦 Bank Transfer</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tales of Fairies. All rights reserved. Made with 💕 and ✨</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="whatsapp-float" onclick="openWhatsApp()" title="Chat on WhatsApp">
+        💬
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Add confetti effect (optional, simple animation)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple celebration effect
+            const confirmationBox = document.querySelector('.confirmation-box');
+            if (confirmationBox) {
+                confirmationBox.style.animation = 'fadeInUp 0.6s ease';
+            }
+        });
+
+        // Add animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
