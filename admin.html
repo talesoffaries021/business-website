@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Tales of Fairies ✨</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- Admin Login -->
+    <div class="admin-login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <span class="logo-icon">🧚‍♀️</span>
+                <h1>Tales of Fairies</h1>
+                <p>Admin Panel</p>
+            </div>
+
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="username">
+                        👤 Username
+                    </label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Enter username"
+                        required
+                        autocomplete="username"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        🔒 Password
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter password"
+                        required
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <div id="loginError" class="error-message" style="display: none;">
+                    Invalid username or password
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Login ✨
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <a href="index.html" style="color: var(--text-light); text-decoration: none; font-size: 0.9rem;">
+                    ← Back to Shop
+                </a>
+            </div>
+
+            <div class="login-info">
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 2rem; text-align: center;">
+                    🔐 Default credentials:<br>
+                    Username: <code>admin</code><br>
+                    Password: <code>fairy2025</code>
+                </p>
+                <p style="font-size: 0.75rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+                    ⚠️ Change these in <code>js/admin.js</code> (lines 8-11)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
